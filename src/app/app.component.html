@@ -1,1 +1,20 @@
-<h3>Coming soon</h3>
+
+<!-- Page loading spinner -->
+<div class="page-loading active">
+  <div class="page-loading-inner">
+    <div class="page-spinner"></div><span>Loading...</span>
+  </div>
+</div>
+
+
+<!-- Page wrapper for sticky footer -->
+<!-- Wraps everything except footer to push footer to the bottom of the page if there is little content -->
+<main class="page-wrapper">
+
+  <app-header></app-header>
+
+  <router-outlet></router-outlet>
+
+</main>
+
+<app-footer></app-footer>
