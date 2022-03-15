@@ -7,6 +7,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import {HomeModule} from "./pages/home/home.module";
 import {AboutModule} from "./pages/about/about.module";
+import {PageNotFoundModule} from "./pages/page-not-found/page-not-found.module";
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import {AboutModule} from "./pages/about/about.module";
     BrowserModule,
     AppRoutingModule,
     HomeModule,
-    AboutModule
+    AboutModule,
+    PageNotFoundModule
   ],
   providers: [],
   bootstrap: [AppComponent]
