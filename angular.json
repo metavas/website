@@ -31,9 +31,24 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/assets/css/theme.min.css",
+              "src/assets/vendor/boxicons/css/boxicons.min.css",
+              "src/assets/vendor/swiper/swiper-bundle.min.css",
+              "src/assets/vendor/lightgallery.js/dist/css/lightgallery.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js",
+              "src/assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js",
+              "src/assets/vendor/jarallax/dist/jarallax.min.js",
+              "src/assets/vendor/@lottiefiles/lottie-player/dist/lottie-player.js",
+              "src/assets/vendor/swiper/swiper-bundle.min.js",
+              "src/assets/vendor/lightgallery.js/dist/js/lightgallery.min.js",
+              "src/assets/vendor/lg-video.js/dist/lg-video.min.js",
+              "src/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js",
+              "src/assets/vendor/shufflejs/dist/shuffle.min.js",
+              "src/assets/js/theme.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -99,24 +114,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss",
-              "src/assets/css/theme.min.css",
-              "src/assets/vendor/boxicons/css/boxicons.min.css",
-              "src/assets/vendor/swiper/swiper-bundle.min.css",
-              "src/assets/vendor/lightgallery.js/dist/css/lightgallery.min.css"
+              "src/styles.scss"
             ],
-            "scripts": [
-              "src/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js",
-              "src/assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js",
-              "src/assets/vendor/jarallax/dist/jarallax.min.js",
-              "src/assets/vendor/@lottiefiles/lottie-player/dist/lottie-player.js",
-              "src/assets/vendor/swiper/swiper-bundle.min.js",
-              "src/assets/vendor/lightgallery.js/dist/js/lightgallery.min.js",
-              "src/assets/vendor/lg-video.js/dist/lg-video.min.js",
-              "src/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js",
-              "src/assets/vendor/shufflejs/dist/shuffle.min.js",
-              "src/assets/js/theme.min.js"
-            ]
+            "scripts": []
           }
         }
       }
