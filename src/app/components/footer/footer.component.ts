@@ -9,6 +9,33 @@ export class FooterComponent implements OnInit {
 
   constructor() { }
 
+  menus = [
+    {
+      name: 'Home',
+      link: '/'
+    },
+    {
+      name: 'Token',
+      link: '/token'
+    },
+    {
+      name: 'Community',
+      link: '/community'
+    },
+    {
+      name: 'Whitepaper',
+      link: '/whitepaper'
+    },
+    {
+      name: 'Blog',
+      link: '/blog'
+    },
+    {
+      name: 'About',
+      link: '/about'
+    }
+  ];
+
   ngOnInit(): void {
   }
 
