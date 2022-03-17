@@ -23,6 +23,7 @@ import {PageNotFoundModule} from "./pages/page-not-found/page-not-found.module";
     PageNotFoundModule
   ],
   providers: [],
+  exports: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
