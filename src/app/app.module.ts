@@ -8,6 +8,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import {HomeModule} from "./pages/home/home.module";
 import {AboutModule} from "./pages/about/about.module";
 import {PageNotFoundModule} from "./pages/page-not-found/page-not-found.module";
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import {PageNotFoundModule} from "./pages/page-not-found/page-not-found.module";
     AppRoutingModule,
     HomeModule,
     AboutModule,
-    PageNotFoundModule
+    PageNotFoundModule,
+    FormsModule
   ],
   providers: [],
   exports: [],
