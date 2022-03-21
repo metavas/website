@@ -1,4 +1,17 @@
 
+.footer-logo {
+  background-image: url('../img/logo-dark.svg');
+  height: 50px;
+  width: 200px;
+  background-repeat: no-repeat;
+}
+
+.dark-mode .footer-logo {
+  background-image: url('../img/logo.svg') !important;
+  height: 50px;
+  width: 200px;
+}
+
 .text-gradient-primary {
   background: linear-gradient(to right, rgba(1, 192, 143, 1), #8b5cf6, #d946ef);
   -webkit-background-clip: text;
