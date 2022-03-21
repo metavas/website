@@ -5,9 +5,9 @@ name: Website CI
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
 
 jobs:
   deploy:
@@ -28,4 +28,3 @@ jobs:
           git pull
           npm install
           ng build
-          
