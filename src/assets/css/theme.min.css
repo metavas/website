@@ -1487,7 +1487,7 @@ progress {
   transition: color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out, box-shadow .2s ease-in-out;
 }
 @media(prefers-reduced-motion:reduce) {
-  .form-control: :-webkit-file-upload-button {
+  .form-control::-webkit-file-upload-button {
     -webkit-transition: none;
     transition: none;
   }
@@ -1517,7 +1517,7 @@ progress {
   transition: color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out, box-shadow .2s ease-in-out;
 }
 @media(prefers-reduced-motion:reduce) {
-  .form-control: :-webkit-file-upload-button {
+  .form-control::-webkit-file-upload-button {
     -webkit-transition: none;
     transition: none;
   }
@@ -1801,7 +1801,7 @@ textarea.form-control-lg {
   appearance: none;
 }
 @media(prefers-reduced-motion:reduce) {
-  .form-range: :-webkit-slider-thumb {
+  .form-range::-webkit-slider-thumb {
     -webkit-transition: none;
     transition: none;
   }
@@ -1831,7 +1831,7 @@ textarea.form-control-lg {
   appearance: none;
 }
 @media(prefers-reduced-motion:reduce) {
-  .form-range: :-moz-range-thumb {
+  .form-range::-moz-range-thumb {
     -moz-transition: none;
     transition: none;
   }
@@ -3713,7 +3713,7 @@ textarea.form-control-lg {
   transition: transform .2s ease-in-out;
 }
 @media(prefers-reduced-motion:reduce) {
-  .accordion-button: :after {
+  .accordion-button::after {
     transition: none;
   }
 }.accordion-button:hover {
