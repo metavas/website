@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnDestroy, OnInit} from '@angular/core';
+import { Router,NavigationStart, Event as NavigationEvent } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -12,11 +13,31 @@ export class HeaderComponent implements OnInit {
   footer = document.getElementsByClassName('footer-logo')[0];
   status = false;
 
+  header = document.getElementById('header');
+  event$: any;
+  url: any;
+
   logo = 'assets/img/logo-dark.svg';
 
-  constructor() { }
+  constructor(
+    private router: Router
+  ) {
+    this.event$
+      =this.router.events
+      .subscribe(
+        (event: NavigationEvent) => {
+          if(event instanceof NavigationStart) {
+            this.url = event.url.toString();
+            // console.log(this.url === '/');
+            // @ts-ignore
+            event.url === '/' ? this.header.classList.add('position-absolute') : this.header.classList.remove('position-absolute');
+          }
+        });
+  }
 
   ngOnInit(): void {
+
+
 
     if (this.mode !== null && this.mode === 'dark') {
       this.root.classList.add('dark-mode');
@@ -42,6 +63,10 @@ export class HeaderComponent implements OnInit {
       localStorage.removeItem('mode');
       this.logo = 'assets/img/logo-dark.svg';
     }
+  }
+
+  ngOnDestroy() {
+    this.event$.unsubscribe();
   }
 
 }
