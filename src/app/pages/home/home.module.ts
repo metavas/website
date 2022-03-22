@@ -7,13 +7,16 @@ import {SubscriptionComponent} from "../../components/subscription/subscription.
 
 
 @NgModule({
-  declarations: [
-    HomeComponent,
-    SubscriptionComponent
-  ],
-  imports: [
-    CommonModule,
-    HomeRoutingModule
-  ]
+    declarations: [
+        HomeComponent,
+        SubscriptionComponent
+    ],
+    exports: [
+        SubscriptionComponent
+    ],
+    imports: [
+        CommonModule,
+        HomeRoutingModule
+    ]
 })
 export class HomeModule { }
