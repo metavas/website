@@ -1,4 +1,4 @@
-import {Component, OnDestroy, OnInit} from '@angular/core';
+import {Component, ElementRef, OnDestroy, OnInit, ViewChild} from '@angular/core';
 import { Router,NavigationStart, Event as NavigationEvent } from '@angular/router';
 
 @Component({
@@ -13,7 +13,9 @@ export class HeaderComponent implements OnInit {
   footer = document.getElementsByClassName('footer-logo')[0];
   status = false;
 
-  header = document.getElementById('header');
+  // header = document.getElementsByClassName('header');
+  @ViewChild('header', { read: ElementRef, static:false }) header: ElementRef | undefined;
+
   event$: any;
   url: any;
 
@@ -28,9 +30,8 @@ export class HeaderComponent implements OnInit {
         (event: NavigationEvent) => {
           if(event instanceof NavigationStart) {
             this.url = event.url.toString();
-            // console.log(this.url === '/');
             // @ts-ignore
-            event.url === '/' ? this.header.classList.add('position-absolute') : this.header.classList.remove('position-absolute');
+            event.url === '/' ? this.header.nativeElement.classList.add('position-absolute') : this.header.nativeElement.classList.remove('position-absolute');
           }
         });
   }

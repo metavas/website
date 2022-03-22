@@ -6057,7 +6057,7 @@ textarea.form-control-lg {
 }
 .bg-dark {
   --bs-bg-opacity: 1;
-  background-color: rgba(51, 51, 51, 1)!important;
+  background-color: rgba(39, 39, 39, 1)!important;
 }
 .bg-black {
   --bs-bg-opacity: 1;
@@ -10207,9 +10207,9 @@ html:not([dir=rtl]) .range-slider-ui.noUi-horizontal .noUi-handle {
   box-shadow: none!important;
 }
 .btn-primary.active, .btn-primary.show, .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
-  background-color: #4044ee;
-  border-color: #4044ee;
-  color: #fff;
+  background-color: #ffe810;
+  border-color: #ffe810;
+  color: #333 !important;
 }
 .btn-secondary.active, .btn-secondary.show, .btn-secondary:active, .btn-secondary:focus, .btn-secondary:hover {
   background-color: #cfd8f6;
@@ -13134,7 +13134,7 @@ img-comparison-slider:focus {
 }
 .dark-mode body {
   background-color: rgba(51, 51, 51, 1);
-  color: rgba(255, 255, 255, .7);
+  color: rgba(255, 255, 255);
 }
 .dark-mode .h1:not(.alert-heading):not(.text-heading), .dark-mode .h2:not(.alert-heading):not(.text-heading), .dark-mode .h3:not(.alert-heading):not(.text-heading), .dark-mode .h4:not(.alert-heading):not(.text-heading), .dark-mode .h5:not(.alert-heading):not(.text-heading), .dark-mode .h6:not(.alert-heading):not(.text-heading), .dark-mode dt:not(.alert-heading):not(.text-heading), .dark-mode h1:not(.alert-heading):not(.text-heading), .dark-mode h2:not(.alert-heading):not(.text-heading), .dark-mode h3:not(.alert-heading):not(.text-heading), .dark-mode h4:not(.alert-heading):not(.text-heading), .dark-mode h5:not(.alert-heading):not(.text-heading), .dark-mode h6:not(.alert-heading):not(.text-heading) {
   color: #fff;
@@ -13512,7 +13512,7 @@ img-comparison-slider:focus {
   color: rgba(1, 192, 143, 1);
 }
 .dark-mode .navbar-light .nav-item>.nav-link.active {
-  color: rgba(1, 192, 143, 1);
+  color: #ffe810;
 }
 .dark-mode .navbar-light .nav-item:hover>.nav-link {
   color: rgba(1, 192, 143, 1);
