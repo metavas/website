@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { TokenRoutingModule } from './token-routing.module';
 import { TokenComponent } from './token.component';
+import {HomeModule} from "../home/home.module";
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { TokenComponent } from './token.component';
   ],
   imports: [
     CommonModule,
-    TokenRoutingModule
+    TokenRoutingModule,
+    HomeModule
   ]
 })
 export class TokenModule { }

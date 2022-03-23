@@ -1,1 +1,48 @@
-<p>token works!</p>
+
+<!-- Video + Title split section -->
+<section class="container-fluid position-relative px-0 mb-5">
+  <div class="row g-0 border-bottom">
+    <div class="col-xl-6 col-lg-6 ps-5">
+
+      <!-- Breadcrumb -->
+      <nav class="container pt-4 mt-lg-3" aria-label="breadcrumb">
+        <ol class="breadcrumb mb-0">
+          <li class="breadcrumb-item">
+            <a routerLink="/">Home</a>
+          </li>
+          <li class="breadcrumb-item">
+            <a routerLink="/token">Token</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">Overview</li>
+        </ol>
+      </nav>
+
+      <div class="position-relative zindex-5 text-center text-lg-start px-3 px-lg-0 py-xl-4 py-xxl-5 mt-lg-3 mx-auto mx-lg-0" style="max-width: 530px;">
+        <h1 class="display-6 pb-lg-3 mb-3 mt-5">VAS Token <span class="coming-badge">Coming soon</span></h1>
+        <div class="d-flex justify-content-center justify-content-lg-start text-start mb-2">
+          <div class="">The VAS token will be launched entirely based on a fair market supply/demand mechanism to ensure an equal opportunity for anyone who wishes to participate in the ecosystem.</div>
+        </div>
+        <div class="d-flex flex-column flex-sm-row justify-content-center justify-content-lg-start py-4 py-lg-5">
+          <a href="#" class="btn btn-primary shadow-primary btn-lg me-sm-3 me-xl-4 mb-3">Keep me updated</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-6 col-lg-6 position-relative">
+      <div class="d-flex h-100">
+        <img class="w-100" src="assets/img/token.jpg" style="max-height: 500px" alt="token" style="object-fit: cover;">
+      </div>
+    </div>
+  </div>
+  <div class="position-absolute d-none d-lg-block bottom-0 start-0 w-100 zindex-5">
+    <div class="container pb-4 mb-3 mb-xxl-0">
+      <a routerLink="/" class="d-table text-light opacity-80 text-decoration-none w-auto py-4" data-scroll data-scroll-offset="70">
+              <span class="d-flex align-items-center">
+                <i class="bx bx-left-arrow-circle fs-3 me-2"></i>
+                Back to home
+              </span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<app-subscription></app-subscription>
