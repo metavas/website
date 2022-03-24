@@ -26,6 +26,7 @@ jobs:
         port: ${{ secrets.PORT }}
         script: |
           cd /var/www/metavas.io
+          rm -r dist
           git pull
           npm install
           ng build
