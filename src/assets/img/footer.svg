@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2216" height="820" viewBox="0 0 2216 820">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="footer_distance" data-name="footer distance" width="2216" height="820" transform="translate(-388 3653)" fill="#333"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.433" y1="0.484" x2="0.469" y2="-0.025" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#333"/>
+      <stop offset="1" stop-color="#09f"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.433" y1="0.484" x2="0.469" y2="-0.025" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#333"/>
+      <stop offset="1" stop-color="#138d6e"/>
+    </linearGradient>
+    <clipPath id="clip-path-2">
+      <rect id="Rectangle_12" data-name="Rectangle 12" width="1293.76" height="222.834" transform="translate(-1.49 -1.49)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Group_38" data-name="Group 38" transform="translate(-962 2166)">
+    <g id="Mask_Group_2" data-name="Mask Group 2" transform="translate(1350 -5819)" clip-path="url(#clip-path)">
+      <g id="Bottom_aurora" data-name="Bottom aurora">
+        <rect id="Rectangle_25" data-name="Rectangle 25" width="1706.011" height="458" transform="translate(1012.242 4167) rotate(16)" opacity="0.271" fill="url(#linear-gradient)"/>
+        <rect id="Rectangle_26" data-name="Rectangle 26" width="1706.011" height="458" transform="translate(675.241 3814) rotate(16)" opacity="0.271" fill="url(#linear-gradient-2)"/>
+      </g>
+    </g>
+  </g>
+</svg>
