@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TokenComponent implements OnInit {
 
+  total_token = 1000000000;
+
   constructor() { }
 
   ngOnInit(): void {
