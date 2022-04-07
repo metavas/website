@@ -9,6 +9,7 @@ import {HomeModule} from "./pages/home/home.module";
 import {AboutModule} from "./pages/about/about.module";
 import {PageNotFoundModule} from "./pages/page-not-found/page-not-found.module";
 import {FormsModule} from "@angular/forms";
+import {HttpClientJsonpModule, HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -22,7 +23,9 @@ import {FormsModule} from "@angular/forms";
     HomeModule,
     AboutModule,
     PageNotFoundModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
+    HttpClientJsonpModule
   ],
   providers: [],
   exports: [],
