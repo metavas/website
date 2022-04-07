@@ -10,6 +10,10 @@ import { NgForm } from '@angular/forms';
 export class SubscriptionComponent implements OnInit {
 
   subscribeData: any = <any>{};
+  buttonText: string = 'Subscribe';
+  isSubscribed: boolean = false;
+  subscribing: boolean = false;
+  hasError: boolean = false;
 
   constructor(
     private subscribeService: SubscribeService
@@ -20,16 +24,36 @@ export class SubscriptionComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  subscribe(subscribeForm: NgForm) {
+  async subscribe(subscribeForm: NgForm) {
     if (subscribeForm.invalid) {
+      this.hasError = true;
+      setTimeout(() => {
+        this.hasError = false;
+      }, 5000);
       return;
     }
-    this.subscribeService.subscribeToList(this.subscribeData)
-      .subscribe(res => {
-        alert('Subscribed!');
-      }, err => {
-        console.log(err);
-      })
+    this.buttonText = 'Subscribing...';
+    this.subscribing = true;
+    this.subscribeService.subscribeToList(this.subscribeData).subscribe(
+      (data) => {
+        this.resetForm(subscribeForm);
+      },
+      (error) => {
+        this.resetForm(subscribeForm);
+      }
+    );
+
+  }
+
+  resetForm(subscribeForm: NgForm) {
+    subscribeForm.reset();
+    this.subscribeData = <any>{};
+    this.buttonText = 'Subscribe';
+    this.isSubscribed = true;
+    this.subscribing = false;
+    setTimeout(() => {
+      this.isSubscribed = false;
+    }, 5000);
   }
 
 }

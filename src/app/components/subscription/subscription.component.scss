@@ -1,3 +1,32 @@
 .dark-mode .bg-secondary {
   background-color: rgba(39, 39, 39, 1);
 }
+
+.success-message {
+    position: absolute;
+    top: 100%;
+    z-index: 5;
+    max-width: 100%;
+    padding: .25rem .5rem;
+    margin-top: .1rem;
+    font-size: .75rem;
+    color: #fff;
+    background-color: rgba(1, 192, 143, 1);
+    margin-left: -1px;
+    border-radius: 0 .25rem .25rem 0;
+}
+
+
+.error-message {
+  position: absolute;
+  top: 100%;
+  z-index: 5;
+  max-width: 100%;
+  padding: .25rem .5rem;
+  margin-top: .1rem;
+  font-size: .75rem;
+  color: #fff;
+  background-color: rgba(239, 68, 68, .9);
+  margin-left: -1px;
+  border-radius: 0 .25rem .25rem 0;
+}

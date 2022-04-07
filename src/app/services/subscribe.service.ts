@@ -13,7 +13,6 @@ export class SubscribeService {
   subscribeToList(data: { email: string; }) {
     const params = new HttpParams()
       .set('EMAIL', data.email)
-      .set('b_b736eb9e9077236cbd681a53b_4b66a82360', '');
     const mailChimpUrl = `${this.mailChimpEndpoint}&${params.toString()}`;
     return this.http.jsonp(mailChimpUrl, 'c')
   }
