@@ -39,7 +39,8 @@ export class SubscriptionComponent implements OnInit {
         this.resetForm(subscribeForm);
       },
       (error) => {
-        this.resetForm(subscribeForm);
+        console.log(error);
+        // this.resetForm(subscribeForm);
       }
     );
 
