@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {environment} from "../../../environments/environment";
 
 @Component({
   selector: 'app-footer',
@@ -8,6 +9,8 @@ import { Component, OnInit } from '@angular/core';
 export class FooterComponent implements OnInit {
 
   logo = 'assets/img/logo-dark.svg';
+  twitter = environment.twitter;
+  discord = environment.discord;
 
   constructor() { }
 

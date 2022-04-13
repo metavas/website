@@ -4,7 +4,7 @@ import { HttpClient, HttpParams } from '@angular/common/http';
   providedIn: 'root'
 })
 export class SubscribeService {
-  // mailChimpEndpoint = 'https://telus.us3.list-manage.com/subscribe/post-json?u=511a3d7b52921bd4fe4fca290&id=d0e353e8c7';
+
   mailChimpEndpoint = 'https://metavas.us14.list-manage.com/subscribe/post?u=511a3d7b52921bd4fe4fca290&amp;id=d0e353e8c7';
 
   constructor(

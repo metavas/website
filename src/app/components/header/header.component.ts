@@ -1,5 +1,6 @@
 import {Component, ElementRef, OnDestroy, OnInit, ViewChild} from '@angular/core';
 import { Router,NavigationStart, Event as NavigationEvent } from '@angular/router';
+import {environment} from "../../../environments/environment";
 
 @Component({
   selector: 'app-header',
@@ -12,6 +13,8 @@ export class HeaderComponent implements OnInit {
   root = document.getElementsByTagName('html')[0];
   footer = document.getElementsByClassName('footer-logo')[0];
   status = false;
+  twitter = environment.twitter;
+  discord = environment.discord;
 
   // header = document.getElementsByClassName('header');
   @ViewChild('header', { read: ElementRef, static:false }) header: ElementRef | undefined;
