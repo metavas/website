@@ -15,6 +15,7 @@ export class HeaderComponent implements OnInit {
   status = false;
   twitter = environment.twitter;
   discord = environment.discord;
+  instagram = environment.instagram;
 
   // header = document.getElementsByClassName('header');
   @ViewChild('header', { read: ElementRef, static:false }) header: ElementRef | undefined;

@@ -11,6 +11,7 @@ export class FooterComponent implements OnInit {
   logo = 'assets/img/logo-dark.svg';
   twitter = environment.twitter;
   discord = environment.discord;
+  instagram = environment.instagram;
 
   constructor() { }
 
