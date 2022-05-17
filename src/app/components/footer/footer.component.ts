@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {environment} from "../../../environments/environment";
 
+const { facebook, instagram, discord, twitter, medium, telegram } = environment;
+
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
@@ -9,9 +11,14 @@ import {environment} from "../../../environments/environment";
 export class FooterComponent implements OnInit {
 
   logo = 'assets/img/logo-dark.svg';
-  twitter = environment.twitter;
-  discord = environment.discord;
-  instagram = environment.instagram;
+  facebook = facebook;
+  instagram = instagram;
+  discord = discord;
+  twitter = twitter;
+  medium = medium;
+  telegram = telegram;
+
+  year = new Date().getFullYear();
 
   constructor() { }
 
@@ -23,10 +30,6 @@ export class FooterComponent implements OnInit {
     {
       name: 'Token',
       link: '/token'
-    },
-    {
-      name: 'Community',
-      link: '/community'
     },
     {
       name: 'Whitepaper',
