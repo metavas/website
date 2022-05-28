@@ -5,5 +5,6 @@ export const environment = {
   telegram: 'https://t.me/metavasafro',
   facebook: 'https://www.facebook.com/metavas_afro-117453580961576/',
   medium: 'https://medium.com/@metavasafro',
-  instagram: 'https://www.instagram.com/metavas_afro/'
+  instagram: 'https://www.instagram.com/metavas_afro/',
+  apiUrl: 'https://api.metavas.io/'
 };
