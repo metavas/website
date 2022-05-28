@@ -10,6 +10,9 @@ import {AboutModule} from "./pages/about/about.module";
 import {PageNotFoundModule} from "./pages/page-not-found/page-not-found.module";
 import {FormsModule} from "@angular/forms";
 import {HttpClientJsonpModule, HttpClientModule} from "@angular/common/http";
+import {ElModule} from "element-angular";
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import {NgxSpinnerModule} from "ngx-spinner";
 
 @NgModule({
   declarations: [
@@ -19,13 +22,16 @@ import {HttpClientJsonpModule, HttpClientModule} from "@angular/common/http";
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
+    ElModule.forRoot(),
     AppRoutingModule,
     HomeModule,
     AboutModule,
     PageNotFoundModule,
     FormsModule,
     HttpClientModule,
-    HttpClientJsonpModule
+    HttpClientJsonpModule,
+    NgxSpinnerModule
   ],
   providers: [],
   exports: [],
