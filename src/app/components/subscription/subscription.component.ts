@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {SubscribeService} from "../../services/subscribe.service";
+import {SubscribeService} from "../../services/subscribe/subscribe.service";
 import { NgForm } from '@angular/forms';
 
 @Component({
@@ -20,7 +20,7 @@ export class SubscriptionComponent implements OnInit {
   ) {
 
   }
-  
+
   ngOnInit(): void {
   }
 
