@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {ContactService} from "../../services/contact/contact.service";
+import {ElNotificationService} from "element-angular";
 
 @Component({
   selector: 'app-about',
@@ -20,6 +21,7 @@ export class AboutComponent implements OnInit {
 
   constructor(
     private contactService: ContactService,
+    private notify: ElNotificationService
   ) { }
 
   ngOnInit(): void {
