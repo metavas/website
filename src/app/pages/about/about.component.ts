@@ -28,16 +28,14 @@ export class AboutComponent implements OnInit {
   }
 
   async contact() {
+
+    if (this.contactDetails.name === '' || this.contactDetails.email === '' || this.contactDetails.message === '') {
+      this.notify.warning('Please fill all the fields');
+      return;
+    }
+
     await this.contactService.send(this.contactDetails).subscribe( (res: { [key: string]: any; }) => {
-      //reset contact details
-      this.contactDetails = {
-        name: '',
-        email: '',
-        message: ''
-      };
-    }, async (error) => {
-      const message = error.error.message
-      // this.notify['error'](message, 'All orders')
+      this.notify.success('Contact message successfully sent')
     })
   }
 
