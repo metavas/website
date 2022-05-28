@@ -3,7 +3,6 @@ import { HttpEvent, HttpHandler, HttpInterceptor, HttpRequest } from '@angular/c
 import { Observable } from 'rxjs';
 import {catchError, finalize, timeout} from 'rxjs/operators';
 import {NgxSpinnerService} from "ngx-spinner";
-import { AuthService } from '../services/auth/auth.service';
 import {Router} from '@angular/router';
 import {ElMessageService, ElNotificationService} from 'element-angular';
 
@@ -11,7 +10,6 @@ import {ElMessageService, ElNotificationService} from 'element-angular';
 export class LoaderInterceptor implements HttpInterceptor {
   constructor(
     private spinner: NgxSpinnerService,
-    public auth: AuthService,
     private alert: ElMessageService,
     private notify: ElNotificationService
   ) {
@@ -25,11 +23,11 @@ export class LoaderInterceptor implements HttpInterceptor {
       !req.reportProgress ? this.spinner.show() : null
     }
 
-    req = req.clone({
-      setHeaders: {
-        Authorization: `Bearer ${this.auth.getToken()}`
-      }
-    })
+    // req = req.clone({
+    //   setHeaders: {
+    //     Authorization: `Bearer ${this.auth.getToken()}`
+    //   }
+    // })
 
     // setTimeout( function() {
     //   this.spinner.hide()
@@ -41,7 +39,7 @@ export class LoaderInterceptor implements HttpInterceptor {
         this.spinner.hide()
       ),
     catchError(async error => {
-      if (error.status === 401) await this.auth.logout()
+      // if (error.status === 401) await this.auth.logout()
       const message = error.error.message
       this.notify.setOptions({
         zIndex: 5000

@@ -9,10 +9,11 @@ import {HomeModule} from "./pages/home/home.module";
 import {AboutModule} from "./pages/about/about.module";
 import {PageNotFoundModule} from "./pages/page-not-found/page-not-found.module";
 import {FormsModule} from "@angular/forms";
-import {HttpClientJsonpModule, HttpClientModule} from "@angular/common/http";
+import {HTTP_INTERCEPTORS, HttpClientJsonpModule, HttpClientModule} from "@angular/common/http";
 import {ElModule} from "element-angular";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {NgxSpinnerModule} from "ngx-spinner";
+import {LoaderInterceptor} from "./interceptors/loader.interceptor";
 
 @NgModule({
   declarations: [
@@ -33,7 +34,13 @@ import {NgxSpinnerModule} from "ngx-spinner";
     HttpClientJsonpModule,
     NgxSpinnerModule
   ],
-  providers: [],
+  providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: LoaderInterceptor,
+      multi: true
+    }
+  ],
   exports: [],
   bootstrap: [AppComponent]
 })
