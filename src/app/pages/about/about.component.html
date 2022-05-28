@@ -298,21 +298,21 @@
         <p class="lead mb-2 mb-md-3">We want to hear from you</p>
         <h2 class="h1 pb-3">Questions?<br>Talk with us.</h2>
       </div>
-      <form class="col-lg-6 col-md-7 offset-xl-1 needs-validation" novalidate>
+      <form class="col-lg-6 col-md-7 offset-xl-1 needs-validation" (submit)="contact()" novalidate>
         <div class="row">
           <div class="col-sm-6 mb-4">
             <label for="name" class="form-label fs-base">Full name</label>
-            <input type="text" id="name" class="form-control form-control-lg" required>
+            <input type="text" id="name" name="name" [(ngModel)]="contactDetails.name" class="form-control form-control-lg" required>
             <div class="invalid-feedback">Please enter your name!</div>
           </div>
           <div class="col-sm-6 mb-4">
             <label for="email" class="form-label fs-base">Email</label>
-            <input type="email" id="email" class="form-control form-control-lg" required>
+            <input type="email" id="email" name="email" [(ngModel)]="contactDetails.email" class="form-control form-control-lg" required>
             <div class="invalid-feedback">Please provide a valid email address!</div>
           </div>
           <div class="col-12 pb-2 mb-4">
             <label for="message" class="form-label fs-base">Message</label>
-            <textarea id="message" class="form-control form-control-lg" rows="4" required></textarea>
+            <textarea id="message" name="message" [(ngModel)]="contactDetails.message" class="form-control form-control-lg" rows="4" required></textarea>
             <div class="invalid-feedback">Please enter your message!</div>
           </div>
         </div>
