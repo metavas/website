@@ -35,6 +35,12 @@ export class AboutComponent implements OnInit {
     }
 
     await this.contactService.send(this.contactDetails).subscribe( (res: { [key: string]: any; }) => {
+      //reset contact details
+      this.contactDetails = {
+        name: '',
+        email: '',
+        message: ''
+      };
       this.notify.success('Contact message successfully sent')
     })
   }
