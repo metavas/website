@@ -7,7 +7,7 @@
       <div class="footer-logo"></div>
     </div>
     <ul class="nav justify-content-center pt-3 pb-4 pb-lg-5">
-      <li class="nav-item" *ngFor="let menu of menus"><a href="#" class="nav-link">{{menu.name}}</a></li>
+      <li class="nav-item" *ngFor="let menu of menus"><a href="{{menu.link}}" class="nav-link">{{menu.name}}</a></li>
     </ul>
     <div class="d-flex flex-column flex-sm-row justify-content-center">
       <a href="{{discord}}" target="_blank" class="btn btn-dark btn-lg px-3 py-2 me-sm-4 mb-3 discord-button">

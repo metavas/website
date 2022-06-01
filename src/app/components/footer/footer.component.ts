@@ -33,11 +33,11 @@ export class FooterComponent implements OnInit {
     },
     {
       name: 'Whitepaper',
-      link: '/whitepaper'
+      link: '#'
     },
     {
       name: 'Blog',
-      link: '/blog'
+      link: 'https://medium.com/@metavasafro'
     },
     {
       name: 'About',
